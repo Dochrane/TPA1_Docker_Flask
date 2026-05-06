@@ -1,0 +1,27 @@
+
+  196  mkdir tpa1_flask_dochrane
+  197  cd tpa1_flask_dochrane
+  198  touch requirements.tx
+  199  nano requirements.txt
+  200  touch app.py
+  201  nano app.py
+  202  touch Dockerfile
+  203  nano Dockerfile
+  204  ls
+  205  sudo docker build -t dochrane-flask-app
+  206  sudo docker build -t dochrane-flask-app .
+  207  sudo docker run --name flask_container -d -p 5001:5000 dochrane-flask-app
+  208  sudo docker ps
+  209  sudo docker ps -a
+  210  sudo docker rm -f flask_container
+  211  sudo docker run --name flask_container -d -p 5001:5000 dochrane-flask-app
+  212  sudo docker ps -a
+  213  sudo docker logs flask_container
+  214  nano app.py
+  215  sudo docker rm -f flask_container
+  216  sudo docker build -t dochrane-flask-app .
+  217  sudo docker run --name flask_container -d -p 5001:5000 dochrane-flask-app
+  218  sudo docker ps
+  219  sudo docker tag dochrane-flask-app ndessop/dochrane-flask-app:v1.0
+  220  sudo docker push ndessop/dochrane-flask-app:v1.0
+  221  history > historique_commandes.txt
